@@ -1046,8 +1046,9 @@ header .content .language .dropdown button img {
     margin-top: 20px;
   }
   .visafe-map__content .top h1 {
-    font-size: 15px;
+    font-size: 16px;
     padding-top: 50px;
+    text-align: center;
   }
   .visafe-map__content .contact .item .item--image img {
     margin-top: 10px;
