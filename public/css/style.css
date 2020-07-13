@@ -45,10 +45,14 @@ header .toolbar {
   background-color: #27AC5F;
   height: 45px;
   padding-bottom: 9px;
+  z-index: 99;
+  position: relative;
 }
 
 header .menu {
   background-color: #DEDBDB;
+  z-index: 1;
+  position: relative;
 }
 
 header .menu .container {
@@ -69,7 +73,7 @@ header .menu .container .menu__navigation {
   display: flex;
 }
 
-header .menu .container .menu__button button {
+header .menu .container .menu__button .download {
   background-color: #27AC5F;
   font-weight: 700;
   width: 170px;
@@ -80,6 +84,10 @@ header .menu .container .menu__button button {
   color: #FFFFFF;
   font-size: 18px;
   margin-top: 10px;
+}
+
+header .menu .container .menu__button .download:hover {
+  background-color: #8adbac;
 }
 
 header .menu .menu__content {
@@ -369,6 +377,8 @@ header .content .language .dropdown button img {
           align-items: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .landing-page__list .latest-article-cart {
@@ -538,7 +548,7 @@ header .content .language .dropdown button img {
 
 .section-regular__slider .prev {
   position: absolute;
-  color: #707070 !important;
+  color: #707070;
   opacity: 1;
   left: 22px;
   border: none;
@@ -553,7 +563,7 @@ header .content .language .dropdown button img {
   text-decoration: none;
 }
 
-.section-regular__slider .prev::before {
+.section-regular__slider .prev:hover, .section-regular__slider .prev::before {
   text-shadow: 0 0;
   font-weight: 400;
   font-style: normal;
@@ -561,11 +571,12 @@ header .content .language .dropdown button img {
   line-height: 1;
   text-transform: none;
   speak: none;
+  color: #27AC5F;
 }
 
 .section-regular__slider .next {
   position: absolute;
-  color: #27AC5F !important;
+  color: #707070;
   right: 22px;
   opacity: 1;
   border: none;
@@ -578,6 +589,17 @@ header .content .language .dropdown button img {
   -webkit-transition: all .2s ease-in-out;
   transition: all .2s ease-in-out;
   text-decoration: none;
+}
+
+.section-regular__slider .next:hover, .section-regular__slider .next::before {
+  text-shadow: 0 0;
+  font-weight: 400;
+  font-style: normal;
+  font-variant: normal;
+  line-height: 1;
+  text-transform: none;
+  speak: none;
+  color: #27AC5F;
 }
 
 .section-regular__dot {
@@ -665,6 +687,10 @@ header .content .language .dropdown button img {
   color: #707070;
 }
 
+.footer__list .infomation-list ul li:hover {
+  color: #FFFFFF;
+}
+
 .footer__list .infomation-list ul .qas {
   margin-bottom: 30px;
 }
@@ -681,6 +707,10 @@ header .content .language .dropdown button img {
   font-size: 14px;
 }
 
+.footer__list .infomation-list ul h3:hover {
+  color: #27AC5F;
+}
+
 .footer__list .infomation-list ul button {
   background-color: #27AC5F;
   font-weight: 700;
@@ -691,6 +721,10 @@ header .content .language .dropdown button img {
   border-radius: 27px;
   color: #FFFFFF;
   font-size: 18px;
+}
+
+.footer__list .infomation-list ul button:hover {
+  background-color: #8adbac;
 }
 
 .footer__list .infomation-list ul hr {
@@ -714,7 +748,6 @@ header .content .language .dropdown button img {
   right: 20px;
   bottom: 20px;
   display: none;
-  opacity: 1 !important;
   position: fixed;
   cursor: pointer;
   z-index: 9999;

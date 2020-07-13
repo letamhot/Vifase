@@ -10,6 +10,7 @@ $black: #000
 $green-gradient: #27AC5F
 $light-gra: #F4F4F4
 $gray-black: #1b1b1b
+$light-green: #8adbac
 @mixin Playfair()
     font-family: 'Playfair Display', serif
 
@@ -41,17 +42,20 @@ header
         background-color: $green
         height: 45px
         padding-bottom: 9px
+        z-index: 99
+        position: relative
     .menu
         background-color: $light-gray
+        z-index: 1
+        position: relative
         .container
             display: flex
             justify-content: space-between
             align-items: center
             .menu__navigation
                 display: flex
-
             .menu__button
-                button
+                .download
                     background-color: $green-gradient
                     font-weight: 700
                     width: 170px
@@ -62,6 +66,8 @@ header
                     color: $white
                     font-size: 18px
                     margin-top: 10px
+                    &:hover
+                        background-color: $light-green
         .menu__content
             list-style: none
             margin-top: 10px
@@ -268,6 +274,8 @@ header
         justify-content: space-between
         align-items: center
         flex-wrap: wrap 
+        justify-content: space-between
+        align-items: center
         .latest-article-cart
             width: 300px
             min-height: 380px
@@ -375,7 +383,7 @@ header
         position: relative
         .prev
             position: absolute
-            color: $gray !important
+            color: $gray
             opacity: 1
             left: 22px
             border: none
@@ -387,17 +395,20 @@ header
             font-size: 48px
             transition: all .2s ease-in-out
             text-decoration: none
-        .prev::before
-            text-shadow: 0 0
-            font-weight: 400
-            font-style: normal
-            font-variant: normal
-            line-height: 1
-            text-transform: none
-            speak: none
+            &:hover, &::before
+                text-shadow: 0 0
+                font-weight: 400
+                font-style: normal
+                font-variant: normal
+                line-height: 1
+                text-transform: none
+                speak: none
+                color: $green
+
+        
         .next
             position: absolute
-            color: $green !important
+            color: $gray
             right: 22px
             opacity: 1
             border: none
@@ -409,6 +420,15 @@ header
             font-size: 48px
             transition: all .2s ease-in-out
             text-decoration: none
+            &:hover, &::before
+                text-shadow: 0 0
+                font-weight: 400
+                font-style: normal
+                font-variant: normal
+                line-height: 1
+                text-transform: none
+                speak: none
+                color: $green
 
     &__dot
         position: absolute
@@ -461,6 +481,8 @@ header
                     list-style: none
                     margin-bottom: 15px
                     color: $gray
+                    &:hover
+                        color: $white
                 .qas
                     margin-bottom: 30px
                 .button
@@ -469,9 +491,11 @@ header
                         font-size: 14px
                 h3
                     font-size: 14px
+                    &:hover
+                        color: $green-gradient
                 
                 button
-                    background-color: $green
+                    background-color: $green-gradient
                     font-weight: 700
                     width: 170px
                     height: 54px
@@ -480,6 +504,8 @@ header
                     border-radius: 27px
                     color: $white
                     font-size: 18px
+                    &:hover
+                        background-color: $light-green
                 hr
                     width: 150px
                     color: $gray
@@ -495,7 +521,6 @@ header
     right: 20px
     bottom: 20px
     display: none
-    opacity: 1 !important
     position: fixed
     cursor: pointer
     z-index: 9999
