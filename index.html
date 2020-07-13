@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./public/css/style.css">
+    <link rel="shortcut icon" href="./public/image/cropped-Vi-32x32.png" type="image/x-icon">
+    <title>Vifase</title>
+</head>
+
+<body>
+    <header id="main-header">
+        <div class="toolbar">
+            <div class="container">
+                <div class="header__icon">
+                    <i class="fa fa-facebook" aria-hidden="true" style="color: white"></i>
+                    <i class="fa fa-instagram" aria-hidden="true" style="color: white"></i>
+                    <i class="fa fa-twitter" aria-hidden="true" style="color: white"></i>
+                </div>
+                <ul class="content">
+
+                    <li>
+                        <span class="phone"><i class="fa fa-phone"></i> +826753678</span>
+                    </li>
+                    <li>
+                        <span class="map"><i class="fa fa-map-marker" aria-hidden="true"></i> Tầng 2, 18 Lê Lợi, Phường
+                            Vĩnh
+                            Ninh, TP.Huế</span>
+                    </li>
+                    <li>
+                        <span>|</span>
+                    </li>
+                    <li class="language">
+                        <button id="change-lang">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/2/21/Flag_of_Vietnam.svg">
+                            <span>Vietnam</span>
+                            <img src="./public/image/arrow.png" alt="">
+                        </button>
+                        <div class="dropdown">
+                            <button>
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/2/21/Flag_of_Vietnam.svg" alt="">
+                                <span>Vietnam</span>
+                            </button>
+                            <button>
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fb/NYCS-bull-trans-B.svg/480px-NYCS-bull-trans-B.svg.png" alt="">
+                                <span>English</span>
+                            </button>
+                        </div>
+                    </li>
+                    <li>
+                        <span>|</span>
+                    </li>
+
+                    <li>
+                        <a href="">Đăng Ký</a>
+                        <label>|</label>
+                        <a href="">Đăng Nhập</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="menu">
+            <div class="container">
+                <div class="menu__logo">
+                    <img id="logo" src="./public/image/logo.png" alt="">
+                </div>
+                <div class="menu__navigation" id="list-menu">
+                    <ul class="menu__content">
+                        <li class="dropdown">
+                            <button onclick="myFunction()" class="dropbtn">VỀ CHÚNG TÔI <img src="./public/image/arrow-dark.png" alt=""></button>
+                            <div id="myDropdown" class="dropdown-content">
+                                <a href="#home">Home</a>
+                                <a href="#about">About</a>
+                                <a href="#contact">Contact</a>
+                            </div>
+                        </li>
+                        <li class="dropdown">
+                            <button onclick="myFunction1()" class="btn">TÀI XẾ <img src="./public/image/arrow-dark.png" alt=""></button>
+                            <div id="dropdown-con" class="dropdown-contact">
+                                <a href="#home">Home</a>
+                                <a href="#about">About</a>
+                                <a href="#contact">Contact</a>
+                            </div>
+                        </li>
+                        <li class="dropdown">
+                            <button onclick="myFunction2()" class="userbtn">NGƯỜI DÙNG <img src="./public/image/arrow-dark.png" alt=""></button>
+                            <div id="userDropdown" class="dropdown-user">
+                                <a href="#home">Home</a>
+                                <a href="#about">About</a>
+                                <a href="#contact">Contact</a>
+                            </div>
+                        </li>
+                        <li class="dropdown">
+                            <button class="dropbtn">TRUNG TÂM HỖ TRỢ</button>
+                        </li>
+                        <li class="dropdown">
+                            <button class="dropbtn">LIÊN HỆ</button>
+                        </li>
+                    </ul>
+                    <div class="menu__button">
+                        <button>Tải App</button>
+                    </div>
+                </div>
+                <div class="hamburger-wrapper">
+                    <img src="./public/image/icon-hamburger.svg" id="myImage" />
+                </div>
+            </div>
+        </div>
+    </header>
+    <section>
+        <div class="layout">
+            <div class="container">
+                <div class="layout__content">
+                    <h1>" Vi:Safe - An toàn <br> trên những chuyến đi "</h1>
+                    <div class="description">
+                        <span>Phục vụ nhu cầu di chuyển của bạn mọi lúc mọi nơi, dể dàng và an toàn.</span>
+                    </div>
+
+                </div>
+                <!-- <div class="layout__image">
+                    <img src="./public/image/home_07.png" alt="">
+                </div> -->
+            </div>
+        </div>
+    </section>
+    <section class="landing-page">
+        <div class="container">
+            <div class="landing-page__content">
+                <h1><span>CHÀO MỪNG</span> BẠN ĐẾN VỚI SIÊU ỨNG DỤNG LÁI XE HỘ VI:SAFE</h1>
+                <img src="./public/image/rule_11.png" alt="">
+            </div>
+            <div class="landing-page__list">
+                <div class="latest-article-cart">
+                    <div class="latest-article">
+                        <div class="image-wrapper">
+                            <img src="./public/image/layout29.png" alt="">
+                        </div>
+
+                        <div class="latest-article__content">
+                            <h6 class="latest-article__title">Đội ngũ tài xế trên 3 năm kinh nghiệm</h6>
+                        </div>
+                    </div>
+                </div>
+                <div class="latest-article-cart">
+                    <div class="latest-article">
+                        <div class="image-wrapper">
+                            <img src="./public/image/layout24.png" alt="">
+                        </div>
+
+                        <div class="latest-article__content">
+
+                            <h6 class="latest-article__title"> Giá cước biết trước</h6>
+
+
+                        </div>
+                    </div>
+                </div>
+                <div class="latest-article-cart">
+                    <div class="latest-article">
+                        <div class="image-wrapper">
+                            <img src="./public/image/layout32.png" alt="">
+                        </div>
+
+                        <div class="latest-article__content">
+
+                            <h6 class="latest-article__title">Thanh toán chớp nhoáng</h6>
+
+
+                        </div>
+                    </div>
+                </div>
+                <div class="latest-article-cart">
+                    <div class="latest-article">
+                        <div class="image-wrapper">
+                            <img src="./public/image/layout33.png" alt="">
+                        </div>
+
+                        <div class="latest-article__content">
+                            <h6 class="latest-article__title">Đưa bạn & phương tiện tới điểm đến an toàn</h6>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="latest-article-cart">
+                    <div class="latest-article">
+                        <div class="image-wrapper">
+                            <img src="./public/image/layout26.png" alt="">
+                        </div>
+
+                        <div class="latest-article__content">
+                            <h6 class="latest-article__title">Tài xế Vi:Safe, giải pháp cho cuộc sống thuận lợi hơn</h6>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="latest-article-cart">
+                    <div class="latest-article">
+                        <div class="image-wrapper">
+                            <img src="./public/image/layout35.png" alt="">
+                        </div>
+
+                        <div class="latest-article__content">
+
+                            <h6 class="latest-article__title">Tìm tài xế gần bạn chỉ bằng một thao tác chạm</h6>
+
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="visafe-map">
+        <div class="container">
+            <div class="visafe-map__image">
+                <img src="./public/image/phone.png" alt="">
+            </div>
+            <div class="visafe-map__content">
+                <div class="top">
+                    <h1>"Vi:Safe an toàn trên những chuyến đi"</h1>
+                </div>
+                <div class="contact">
+                    <div class="item">
+                        <div class="item--image">
+                            <img src="./public/image/mark.png" alt="">
+                        </div>
+                        <div class="item--content">
+                            <h3 class="title">VI:SAFE luôn nỗ lực để mang đến cuộc sống an toàn hơn mỗi ngày</h3>
+                            <span class="content">An toàn của khách hàng, đối tác và cộng đồng là ưu tiên hàng đầu của Vi:safe.</span>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="item--image">
+                            <img src="./public/image/mark.png" alt="">
+                        </div>
+                        <div class="item--content">
+                            <h3 class="title">Siêu ứng dụng, Siêu an toàn cho mỗi chuyến đi</h3>
+                            <span class="content">Với nỗ lực trở thành ứng dụng hữu ích cho cuộc sống hàng ngày, Vi:safe đặt an toàn và 
+                            an ninh cho khách hàng làm ưu tiên hàng đầu.</span>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="item--image">
+                            <img src="./public/image/mark.png" alt="">
+                        </div>
+                        <div class="item--content">
+                            <h3 class="title">Chúng tôi tin</h3>
+                            <span class="content">Chúng tôi hoạt động dựa theo một số nguyên tắc cố định và không hề khoan nhượng. 
+                            Chính sách này là những nguyên tắc an toàn cơ bản mà chúng tôi thực hành và tuân thủ, 
+                            nhằm hướng đến một cuộc sống an toàn mỗi ngày.</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <section class="section-regular">
+        <div class="container">
+            <div class="section-regular__text">
+                <h1><span>HÃY ĐĂNG KÝ</span> CÙNG HÀNG TRIỆU NGƯỜI DÙNG KHÁC</h1>
+                <img src="./public/image/rule_11.png" alt="">
+            </div>
+            <div class="section-regular__slogan">
+                <h2>Ứng dụng vô cùng tiện tích, nó thực sự rất hiệu quả lúc tôi không
+                    <br> thể điều khiển xe vì đã lỡ quá chén.</h2>
+                <span>- KTS. Trần Quang Bình -</span>
+                <ul class="star">
+                    <li class="star__item"><img src="./public/image/star.png" alt=""></li>
+                    <li class="star__item"><img src="./public/image/star.png" alt=""></li>
+                    <li class="star__item"><img src="./public/image/star.png" alt=""></li>
+                    <li class="star__item"><img src="./public/image/star.png" alt=""></li>
+                    <li class="star__item"><img src="./public/image/star.png" alt=""></li>
+                </ul>
+            </div>
+            <div class="section-regular__slider">
+                <a class="prev" href="" onclick="">&#10094;
+                </a>
+                <a class="next" href="" onclick="">&#10095;
+                </a>
+            </div>
+            <div class="section-regular__dot">
+                <label class="active" for="slide-dot-1 "></label>
+                <label for="slide-dot-2"></label>
+                <label for="slide-dot-3"></label>
+                <label for="slide-dot-4"></label>
+            </div>
+        </div>
+    </section>
+    <footer class="footer" id="main-footer">
+        <div class="container">
+            <div class="footer__list">
+                <div class="info">
+                    <div class="info__image">
+                        <img src="./public/image/logo.png" alt="">
+                    </div>
+                    <div class="info__address">
+                        <span class="phone"><i class="fa fa-phone"></i> +826753678</span>
+                        <br>
+                        <span class="map"><i class="fa fa-map-marker" aria-hidden="true"></i> Tầng 2, 18 Lê Lợi, <br> Phường
+                            Vĩnh
+                            Ninh, TP.Huế</span>
+                    </div>
+                    <div class="info__icon">
+                        <img src="./public/image/icon-gg.png" alt="">
+                        <img src="./public/image/icon-app.png" alt="">
+                    </div>
+                </div>
+                <div class="infomation-list">
+                    <ul class="infomation-list__we">
+                        <h3>VỀ CHÚNG TÔI</h3>
+                        <li>Cách Vi:Safe hoạt động</li>
+                        <li>Tin tưởng & an toàn</li>
+                        <li>Trung tâm tiếp nhận đối tác</li>
+                        <li>Tin tức</li>
+                    </ul>
+                    <ul class="infomation-list__driver">
+                        <h3>TÀI XẾ</h3>
+                        <li>Đăng ký/ Đăng nhập</li>
+                        <li>Tìm tài xế</li>
+                        <li>Quy trình đặt tài xế</li>
+                        <li>Quy tắc ứng xử - Khách hàng</li>
+                        <li>Gói hội viên</li>
+                    </ul>
+                    <ul class="infomation-list__user">
+                        <h3>NGƯỜI DÙNG</h3>
+                        <li>Tư vấn đăng ký</li>
+                        <li>Đăng ký làm tài xế Vi:Safe</li>
+                        <li>Trung tâm hỗ trợ</li>
+                        <li>Vi:Safe Blogs</li>
+                    </ul>
+                    <ul class="infomation-list__support-center">
+                        <h3>TRUNG TÂM HỖ TRỢ</h3>
+                        <li class="qas">QAS</li>
+                        <hr>
+                        <br>
+                        <li class="button"><button>Tải App</button></li>
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer__contact">
+            <span>&#9400; Copyright Vi:Safe 2020. All Rights Reserved</span>
+        </div>
+    </footer>
+    <a onclick="topFunction()" id="myBtn" title="Go to top"><img src="./public/image/scrolltop.png" alt=""></a>
+</body>
+<script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+<script src="./public/js/style.js"></script>
+
+</html>
