@@ -13,7 +13,6 @@ html, body {
 }
 
 header {
-  height: 126px;
   position: -webkit-sticky;
   position: sticky;
   top: 0px !important;
@@ -43,16 +42,11 @@ header .container .hamburger-wrapper {
 
 header .toolbar {
   background-color: #27AC5F;
-  height: 45px;
   padding-bottom: 9px;
-  z-index: 99;
-  position: relative;
 }
 
 header .menu {
   background-color: #DEDBDB;
-  z-index: 1;
-  position: relative;
 }
 
 header .menu .container {
@@ -237,10 +231,6 @@ header .content li label {
   color: #FFFFFF;
 }
 
-header .content .language {
-  position: relative;
-}
-
 header .content .language #change-lang {
   position: relative;
   width: 118px;
@@ -251,6 +241,7 @@ header .content .language #change-lang {
   outline: none;
   padding: 0;
   font-size: 12px;
+  z-index: 4;
 }
 
 header .content .language #change-lang img {
@@ -382,12 +373,13 @@ header .content .language .dropdown button img {
 }
 
 .landing-page__list .latest-article-cart {
-  width: 300px;
-  min-height: 380px;
+  max-width: 100%;
+  min-height: 400px;
   text-align: center;
   border: 1px solid #27AC5F;
   border-radius: 20px;
   margin-bottom: 20px;
+  margin-right: 20px;
   display: -ms-grid;
   display: grid;
   grid-auto-rows: 2fr 1fr;
@@ -399,10 +391,33 @@ header .content .language .dropdown button img {
           align-items: flex-end;
 }
 
-.landing-page__list .latest-article-cart img {
+.landing-page__list .latest-article-cart .latest-article .image-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 20px;
+}
+
+.landing-page__list .latest-article-cart .latest-article .image-wrapper img {
   display: block;
   max-width: 100%;
   height: auto;
+}
+
+.landing-page__list .latest-article-cart .latest-article .latest-article__content h6 {
+  font-size: 22px;
+  padding: 0;
+  margin: 0;
 }
 
 .visafe-map {
@@ -863,8 +878,6 @@ header .content .language .dropdown button img {
         grid-template-columns: repeat(2, 1fr);
   }
   .landing-page__list .latest-article-cart {
-    width: 280px;
-    min-height: 350px;
     margin-right: 20px;
   }
   .visafe-map .container {
@@ -994,8 +1007,6 @@ header .content .language .dropdown button img {
         grid-template-columns: repeat(1, 1fr);
   }
   .landing-page .container .landing-page__list .latest-article-cart {
-    width: 230px;
-    min-height: 380px;
     margin-right: 20px;
   }
   .visafe-map__image img {
@@ -1032,6 +1043,7 @@ header .content .language .dropdown button img {
   }
   .section-regular .container .section-regular__slogan .star li {
     margin-right: 10px;
+    font-size: 16px;
   }
 }
 /*# sourceMappingURL=style.css.map */
