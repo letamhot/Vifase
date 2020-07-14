@@ -994,8 +994,9 @@ header .content .language .dropdown button img {
     height: 60px !important;
   }
   header .menu .container .menu__navigation {
-    height: 400px;
-    left: 15vw;
+    width: 100%;
+    height: auto;
+    left: 0;
     padding: 0;
   }
   header .menu .container .menu__navigation .menu__content {
