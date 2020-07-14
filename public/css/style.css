@@ -45,10 +45,14 @@ header .container .hamburger-wrapper {
 header .toolbar {
   background-color: #27AC5F;
   padding-bottom: 9px;
+  position: relative;
+  z-index: 99;
 }
 
 header .menu {
   background-color: #DEDBDB;
+  position: relative;
+  z-index: 10;
 }
 
 header .menu .container {
