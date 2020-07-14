@@ -19,7 +19,6 @@ header {
   left: 0;
   padding: 0;
   margin-top: -1px;
-  z-index: 9999;
 }
 
 header .container {
@@ -260,6 +259,7 @@ header .content li label {
 
 header .content .language #change-lang {
   position: relative;
+  z-index: 100;
   width: 118px;
   height: 28px;
   border: 1px solid #FFFFFF;
@@ -268,7 +268,6 @@ header .content .language #change-lang {
   outline: none;
   padding: 0;
   font-size: 12px;
-  z-index: 100;
 }
 
 header .content .language #change-lang img {
