@@ -98,6 +98,8 @@ header .menu .dropbtn {
   border: none;
   cursor: pointer;
   font-weight: 700;
+  position: relative;
+  z-index: 100;
 }
 
 header .menu .dropbtn:hover, header .menu .dropbtn:focus {
@@ -112,6 +114,8 @@ header .menu .btn {
   border: none;
   cursor: pointer;
   font-weight: 700;
+  position: relative;
+  z-index: 100;
 }
 
 header .menu .btn:hover, header .menu .btn:focus {
@@ -126,6 +130,8 @@ header .menu .userbtn {
   border: none;
   cursor: pointer;
   font-weight: 700;
+  position: relative;
+  z-index: 100;
 }
 
 header .menu .userbtn:hover, header .menu .userbtn:focus {
@@ -242,13 +248,25 @@ header .content span {
   color: #FFFFFF;
 }
 
+header .content span:hover {
+  color: #DEDBDB;
+}
+
 header .content li span {
   color: #FFFFFF;
+}
+
+header .content li span:hover {
+  color: #DEDBDB;
 }
 
 header .content li a {
   color: #FFFFFF;
   text-decoration: none;
+}
+
+header .content li a:hover {
+  color: #DEDBDB;
 }
 
 header .content li label {
@@ -261,7 +279,7 @@ header .content .language {
 
 header .content .language #change-lang {
   position: relative;
-  z-index: 4;
+  z-index: 100;
   width: 118px;
   height: 28px;
   border: 1px solid #FFFFFF;
@@ -790,7 +808,7 @@ header .content .language .dropdown button img {
   font-size: 16px;
 }
 
-#myBtn {
+.scrollToTop {
   opacity: 0.8;
   right: 20px;
   bottom: 20px;
@@ -800,9 +818,13 @@ header .content .language .dropdown button img {
   z-index: 2;
 }
 
-#myBtn img {
+.scrollToTop img {
   max-width: 100%;
   height: auto;
+}
+
+.scrollToTop:hover {
+  text-decoration: none;
 }
 
 @media screen and (max-width: 1024px) {
@@ -818,10 +840,7 @@ header .content .language .dropdown button img {
   #logo {
     width: 70%;
   }
-  #myBtn {
-    right: 150px;
-  }
-  #myBtn img {
+  .scrollToTop img {
     width: 50px !important;
     height: 50px !important;
   }
@@ -976,10 +995,7 @@ header .content .language .dropdown button img {
   .container {
     padding: 10px 20px !important;
   }
-  #myBtn {
-    right: 50px;
-  }
-  #myBtn img {
+  .scrollToTop img {
     width: 50px !important;
     height: 50px !important;
   }
