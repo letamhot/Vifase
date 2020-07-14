@@ -10,7 +10,7 @@ $(document).ready(function() {
     });
 
     //Click event to scroll to top
-    $('.scrollToTop').click(function() {
+    $('.scrollToTop').click(function(e) {
         $('html, body').animate({ scrollTop: 0 }, 500);
         return false;
     });

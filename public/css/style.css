@@ -19,6 +19,8 @@ header {
   left: 0;
   padding: 0;
   margin-top: -1px;
+  -webkit-transition: height 0.5s;
+  transition: height 0.5s;
   z-index: 99;
 }
 
@@ -99,7 +101,7 @@ header .menu .dropbtn {
   cursor: pointer;
   font-weight: 700;
   position: relative;
-  z-index: 100;
+  z-index: 10;
 }
 
 header .menu .dropbtn:hover, header .menu .dropbtn:focus {
@@ -115,7 +117,7 @@ header .menu .btn {
   cursor: pointer;
   font-weight: 700;
   position: relative;
-  z-index: 100;
+  z-index: 10;
 }
 
 header .menu .btn:hover, header .menu .btn:focus {
@@ -131,7 +133,7 @@ header .menu .userbtn {
   cursor: pointer;
   font-weight: 700;
   position: relative;
-  z-index: 100;
+  z-index: 10;
 }
 
 header .menu .userbtn:hover, header .menu .userbtn:focus {
@@ -176,6 +178,7 @@ header .menu .dropdown-user {
   overflow: auto;
   -webkit-box-shadow: 0px 8px 16px 0px #000;
           box-shadow: 0px 8px 16px 0px #000;
+  z-index: 100;
 }
 
 header .menu .dropdown-user a {
@@ -194,6 +197,7 @@ header .menu .dropdown-contact {
   overflow: auto;
   -webkit-box-shadow: 0px 8px 16px 0px #000;
           box-shadow: 0px 8px 16px 0px #000;
+  z-index: 100;
 }
 
 header .menu .dropdown-contact a {
@@ -212,6 +216,7 @@ header .menu .dropdown-content {
   overflow: auto;
   -webkit-box-shadow: 0px 8px 16px 0px #000;
           box-shadow: 0px 8px 16px 0px #000;
+  z-index: 100;
 }
 
 header .menu .dropdown-content a {
@@ -279,7 +284,6 @@ header .content .language {
 
 header .content .language #change-lang {
   position: relative;
-  z-index: 100;
   width: 118px;
   height: 28px;
   border: 1px solid #FFFFFF;
@@ -288,6 +292,10 @@ header .content .language #change-lang {
   outline: none;
   padding: 0;
   font-size: 12px;
+}
+
+header .content .language #change-lang:focus + #dropdown {
+  display: block;
 }
 
 header .content .language #change-lang img {
@@ -311,7 +319,8 @@ header .content .language #change-lang img:last-child {
 }
 
 header .content .language .dropdown {
-  background-color: #27AC5F;
+  background-color: #FFFFFF;
+  border-bottom: 1px solid #DEDBDB;
   position: absolute;
   display: none;
   top: 30px;
@@ -320,13 +329,17 @@ header .content .language .dropdown {
 }
 
 header .content .language .dropdown button {
-  background-color: #27AC5F;
+  background-color: #FFFFFF;
   border: 0;
   width: 100%;
   text-align: left;
   padding: 6px;
   cursor: pointer;
   height: 28px;
+}
+
+header .content .language .dropdown button span {
+  color: #000;
 }
 
 header .content .language .dropdown button img {
