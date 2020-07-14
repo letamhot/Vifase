@@ -170,7 +170,6 @@ header .menu .dropdown-user {
   overflow: auto;
   -webkit-box-shadow: 0px 8px 16px 0px #000;
           box-shadow: 0px 8px 16px 0px #000;
-  z-index: 1;
 }
 
 header .menu .dropdown-user a {
@@ -189,7 +188,6 @@ header .menu .dropdown-contact {
   overflow: auto;
   -webkit-box-shadow: 0px 8px 16px 0px #000;
           box-shadow: 0px 8px 16px 0px #000;
-  z-index: 1;
 }
 
 header .menu .dropdown-contact a {
@@ -208,7 +206,6 @@ header .menu .dropdown-content {
   overflow: auto;
   -webkit-box-shadow: 0px 8px 16px 0px #000;
           box-shadow: 0px 8px 16px 0px #000;
-  z-index: 1;
 }
 
 header .menu .dropdown-content a {
@@ -258,9 +255,13 @@ header .content li label {
   color: #FFFFFF;
 }
 
+header .content .language {
+  position: relative;
+}
+
 header .content .language #change-lang {
   position: relative;
-  z-index: 100;
+  z-index: 4;
   width: 118px;
   height: 28px;
   border: 1px solid #FFFFFF;
@@ -334,8 +335,6 @@ header .content .language .dropdown button img {
 
 .layout .container .layout__content {
   padding-top: 180px;
-  z-index: 4;
-  position: relative;
   top: 0;
 }
 
@@ -564,6 +563,7 @@ header .content .language .dropdown button img {
 
 .section-regular__slogan h2 {
   margin-bottom: 45px;
+  font-style: italic;
 }
 
 .section-regular__slogan h2::before {
@@ -571,6 +571,10 @@ header .content .language .dropdown button img {
   font-family: 'Playfair Display SC', serif;
   font-size: 126.5px;
   color: #DEDBDB;
+}
+
+.section-regular__slogan span {
+  color: #707070;
 }
 
 .section-regular__slogan .star {
@@ -600,7 +604,6 @@ header .content .language .dropdown button img {
   border: none;
   cursor: pointer;
   position: absolute;
-  z-index: 100;
   top: 50%;
   margin-top: -90px;
   font-size: 48px;
@@ -628,7 +631,6 @@ header .content .language .dropdown button img {
   border: none;
   cursor: pointer;
   position: absolute;
-  z-index: 100;
   top: 50%;
   margin-top: -90px;
   font-size: 48px;
@@ -650,7 +652,6 @@ header .content .language .dropdown button img {
 
 .section-regular__dot {
   position: absolute;
-  z-index: 10;
   bottom: 20px;
   left: 0;
   width: 100%;
@@ -796,7 +797,7 @@ header .content .language .dropdown button img {
   display: none;
   position: fixed;
   cursor: pointer;
-  z-index: 9999;
+  z-index: 2;
 }
 
 #myBtn img {
@@ -858,7 +859,6 @@ header .content .language .dropdown button img {
             flex-direction: column;
     -ms-flex-pack: distribute;
         justify-content: space-around;
-    z-index: 1;
     padding-top: 0px;
     padding-bottom: 0px;
     padding-right: 35px;
@@ -1040,7 +1040,7 @@ header .content .language .dropdown button img {
     margin-right: 20px;
   }
   .visafe-map__image img {
-    width: 200px;
+    width: 100%;
     padding-left: 20px;
     margin-top: 20px;
   }
