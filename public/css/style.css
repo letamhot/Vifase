@@ -346,6 +346,10 @@ header .content .language .dropdown button span {
   color: #000;
 }
 
+header .content .language .dropdown button span:hover {
+  color: #DEDBDB;
+}
+
 header .content .language .dropdown button img {
   width: 18px;
   height: 12px;
