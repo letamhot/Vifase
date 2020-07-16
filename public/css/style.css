@@ -131,16 +131,16 @@ header .menu .menu__content .dropdown-content a {
   display: block;
 }
 
-header .menu .menu__content .dropdown-content a:hover {
+header .menu .menu__content .dropdown-content a:hover, header .menu .menu__content .dropdown-content a:focus {
   background-color: #f1f1f1;
 }
 
-header .menu .menu__content .dropdown:hover .dropdown-content {
+header .menu .menu__content .dropdown:hover .dropdown-content, header .menu .menu__content .dropdown:focus .dropdown-content {
   display: block;
   z-index: 100;
 }
 
-header .menu .menu__content .dropdown:hover .dropbtn {
+header .menu .menu__content .dropdown:hover .dropbtn, header .menu .menu__content .dropdown:focus .dropbtn {
   color: #27AC5F;
 }
 
@@ -825,7 +825,7 @@ header .content .language .dropdown button img {
   }
   header .menu .container .menu__navigation {
     position: fixed;
-    top: 55px;
+    top: 48px;
     left: 10vw;
     width: 75vw;
     height: 300px;

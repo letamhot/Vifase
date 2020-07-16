@@ -101,15 +101,15 @@ header
                     display: block
 
             .dropdown-content 
-                a:hover
+                a:hover, a:focus
                     background-color: #f1f1f1
 
-            .dropdown:hover 
+            .dropdown:hover, .dropdown:focus 
                 .dropdown-content
                     display: block
                     z-index: 100
 
-            .dropdown:hover 
+            .dropdown:hover, .dropdown:focus 
                 .dropbtn 
                     color: $green-gradient
         .dropdown 
@@ -560,7 +560,7 @@ header
             .container
                 .menu__navigation
                     position: fixed
-                    top: 55px
+                    top: 48px
                     left: 10vw
                     width: 75vw
                     height: 300px
