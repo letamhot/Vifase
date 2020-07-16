@@ -45,6 +45,7 @@ header
     .menu
         background-color: $light-gray
         position: relative
+        width: 100%
         z-index: 10
         .container
             display: flex
@@ -70,51 +71,47 @@ header
             list-style: none
             margin-top: 10px
             margin-right: 50px
-        .dropbtn 
-            background-color: $light-gray
-            color: $black
-            padding: 16px
-            font-size: 16px
-            border: none
-            cursor: pointer
-            font-weight: 700
-            position: relative
-            z-index: 10  
+            .dropdown
+                position: relative
+                display: inline-block
+            .dropbtn   
+                background-color: $light-gray
+                color: $black
+                padding: 16px
+                font-size: 16px
+                border: none
+                cursor: pointer
+                font-weight: 700
+                position: relative
+                z-index: 10
+        
+            .dropdown-content 
+                display: none
+                position: absolute
+                background-color: #f9f9f9
+                min-width: 160px
+                box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2)
+                z-index: 1
 
+            .dropdown-content 
+                a 
+                    color: $black
+                    padding: 12px 16px
+                    text-decoration: none
+                    display: block
 
+            .dropdown-content 
+                a:hover
+                    background-color: #f1f1f1
 
-        .dropbtn:hover, .dropbtn:focus 
-            background-color: $light-gray
+            .dropdown:hover 
+                .dropdown-content
+                    display: block
+                    z-index: 100
 
-        .btn 
-            background-color: $light-gray
-            color: $black
-            padding: 16px
-            font-size: 16px
-            border: none
-            cursor: pointer
-            font-weight: 700
-            position: relative
-            z-index: 10    
-
-
-        .btn:hover, .btn:focus 
-            background-color: $light-gray
-        .userbtn 
-            background-color: $light-gray
-            color: $black
-            padding: 16px
-            font-size: 16px
-            border: none
-            cursor: pointer
-            font-weight: 700
-            position: relative
-            z-index: 10  
-
-
-        .userbtn:hover, .userbtn:focus 
-            background-color: $light-gray
-
+            .dropdown:hover 
+                .dropbtn 
+                    color: $green-gradient
         .dropdown 
             position: relative
             display: inline-block
@@ -132,59 +129,6 @@ header
                 display: none 
                 & + .icon-social2
                 display: block
-
-        .dropdown-user 
-            display: none
-            position: absolute
-            background-color: $white
-            min-width: 160px
-            overflow: auto
-            box-shadow: 0px 8px 16px 0px $black
-            z-index: 100    
-
-
-        .dropdown-user a 
-            color: $black
-            padding: 12px 16px
-            text-decoration: none
-            display: block
-            border-bottom: 1px solid $light-gra
-        .dropdown-contact 
-            display: none
-            position: absolute
-            background-color: $white
-            min-width: 160px
-            overflow: auto
-            box-shadow: 0px 8px 16px 0px $black
-            z-index: 100    
-
-
-        .dropdown-contact a 
-            color: $black
-            padding: 12px 16px
-            text-decoration: none
-            display: block
-            border-bottom: 1px solid $light-gra
-
-
-        .dropdown-content 
-            display: none
-            position: absolute
-            background-color: $white
-            min-width: 160px
-            overflow: auto
-            box-shadow: 0px 8px 16px 0px $black
-            z-index: 100 
-        .dropdown-content a 
-            color: $black
-            padding: 12px 16px
-            text-decoration: none
-            display: block
-            border-bottom: 1px solid $light-gra
-
-
-        .dropdown a:hover 
-            background-color: $light-gray
 
         .show 
             display: block
@@ -568,17 +512,6 @@ header
         padding: 20px 0 
         span
             font-size: 16px 
-// #myBtn 
-//     opacity: 0.8
-//     right: 20px
-//     bottom: 20px
-//     display: none
-//     position: fixed
-//     cursor: pointer
-//     z-index: 2
-//     img
-//         max-width: 100%
-//         height: auto
 .scrollToTop
     opacity: 0.8
     right: 20px
