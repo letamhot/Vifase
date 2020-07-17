@@ -116,7 +116,7 @@ header .menu .menu__content .dropbtn {
 
 header .menu .menu__content .dropdown-content {
   display: none;
-  position: static;
+  position: absolute;
   background-color: #f9f9f9;
   min-width: 160px;
   z-index: 1;
@@ -981,6 +981,9 @@ header .content .language .dropdown button img {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+  }
+  header .menu .container .menu__navigation .menu__content .dropdown-content {
+    position: static;
   }
   .layout {
     padding: 50px 0;

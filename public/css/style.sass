@@ -87,7 +87,7 @@ header
         
             .dropdown-content 
                 display: none
-                position: static
+                position: absolute
                 background-color: #f9f9f9
                 min-width: 160px
                 z-index: 1
@@ -574,6 +574,7 @@ header
                     background-color: $light-gray
                     .menu__content
                         display: flex
+                        
                     .menu__button
                         text-align: center
 
@@ -677,6 +678,8 @@ header
                     .menu__content
                         padding-left: 0px !important
                         flex-direction: column
+                        .dropdown-content
+                            position: static
     .layout 
         padding: 50px 0
         .container 
